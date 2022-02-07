@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day6 HTML-CSS</title>
+    <style>
+		body{
+			
+			background:rgb(100,200,255,0.4);
+		}
+        h1{
+            text-align: center;
+        }
+		form{
+			display:flex;
+			flex-wrap:wrap;
+			justify-content:space-around;
+		}
+		section{
+			display:flex;
+			margin:10px;
+			width:37%;
+		}
+		label{
+			width:40%;
+			flex-grow:3;
+		}
+		input{
+			width:50%;
+			flex-grow:6;
+		}
+		select{
+			width:50%;
+			flex-grow:5;
+		}
+		#submit{
+			position:relative;
+			left:50%;
+			width:60px;
+			color:white;
+			background:blue;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1 id="h1">Student Registration Form</h1>
+	</header>
+	<main>
+		<form id="form1">
+			<section>
+				<label for="stud_name">Full name : </label>
+				<input type="text" id="stud_name" placeholder="F_name  M_name  L_name">
+			</section>
+			
+			<section>
+				<label for="sem">Semister : </label>
+				<input type="number" id="sem">
+			</section>
+			<section>
+				<label for="gen">Gender:</label>
+				<input type="radio" id="gen" name="gender" checked>male
+				<input type="radio" id="gen" name="gender">Female
+				<input type="radio" id="gen" name="gender">other
+			</section>
+			<section>
+				<label for="dob">Birth date :</label>
+				<input type="date" id="dob">
+			</section>
+			<section>
+				<label for="mobile">Mobile No. : </label>
+				<input type="tel" id="mobile">
+			</section>
+			<section>
+				<label for="email">Email address : </label>
+				<input type="text" id="email" placeholder="abc@gmail.com">
+			</section>
+			<section>
+				<label for="branch">Branch : </label>
+				<select name="branch" id="branch">
+					<option>Computer</option>
+					<option>EC</option>
+					<option>IT</option>
+					<option>Rubber</option>
+					<option>Chamical</option>
+					<option>Civil</option>
+				</select>
+			</section>
+			<section>
+				<label for="hobby">Hobby : </label>
+				<input type="text" id="hobby" placeholder="cricket">
+			</section>
+
+		</form>
+			<input form="form1" id="submit" type="submit" value="submit">
+
+	</main>
+</html>
